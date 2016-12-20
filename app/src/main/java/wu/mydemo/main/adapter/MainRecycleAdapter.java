@@ -8,8 +8,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.List;
+import java.util.Random;
 
 import wu.mydemo.R;
+import wu.mydemo.utils.SystemTool;
 
 /**
  * 主页面适配器
@@ -44,6 +46,7 @@ public class MainRecycleAdapter extends RecyclerView.Adapter<MainRecycleAdapter.
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         holder.tvName.setText(list.get(position));
+        holder.tvName.setBackgroundColor(SystemTool.getRandColorCode());
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder{
@@ -53,6 +56,9 @@ public class MainRecycleAdapter extends RecyclerView.Adapter<MainRecycleAdapter.
             tvName = (TextView) view.findViewById(R.id.tv_name);
         }
     }
+
+
+
 
 
 }
