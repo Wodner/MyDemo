@@ -1,8 +1,11 @@
 package wu.mydemo.utils;
 
+import android.content.Context;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Random;
 
 /**
@@ -28,5 +31,28 @@ public class SystemTool {
         Random random = new Random();
         int ranColor = 0xff000000 | random.nextInt(0x00ffffff);
         return ranColor;
+    }
+
+    /**
+     * 获取assets 下的txt
+     * @param context
+     * @param fileName
+     * @return
+     */
+    public static String getAssetsTxt(Context context, String fileName){
+        InputStream inputStream = null;
+        String string;
+        try {
+            inputStream = context.getAssets().open(fileName);
+            int size = inputStream.available();
+            byte[] bytes = new byte[size];
+            inputStream.read(bytes);
+            inputStream.close();
+            string = new String(bytes);
+            return string;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return "";
+        }
     }
 }

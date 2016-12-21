@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!--登录页面-->
-        <activity android:name=".login.LoginActivity"
+        <activity android:name=".function.login.LoginActivity"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
             android:theme="@style/FullScreenTheme">
             <intent-filter>
@@ -24,6 +24,30 @@
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
             android:label="功能页面"/>
 
+        <!--沉浸式页面-->
+        <activity android:name=".function.immerse.ImmerseActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:label="沉浸式" />
+        <!--说明页面-->
+        <activity android:name=".function.readme.ReadMeActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:label="说明" />
+
+        <activity android:name=".function.toggleButton.ToggleButtonActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:label="开关"/>
+
+        <!--滑动返回页面-->
+        <activity android:name=".function.swipeBack.MySwipeBackActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:label="滑动返回"
+            />
+
+        <!--滑动删除页面-->
+        <activity android:name=".function.swipeListDelete.SwipeListDeleteActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
+            android:label="滑动删除"
+            />
 
 
     </application>

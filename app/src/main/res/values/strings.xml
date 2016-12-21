@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">MyDemo</string>
+
+
+    <string-array name="itme_function">
+        <item>说明</item>
+        <item>图片选择</item>
+        <item>图片查看</item>
+        <item>轮播图</item>
+        <item>上下拉刷新</item>
+        <item>城市选择</item>
+        <item>数据库</item>
+        <item>图片加载</item>
+        <item>网络请求</item>
+        <item>侧滑菜单</item>
+        <item>导航栏</item>
+        <item>音乐播放</item>
+        <item>音乐播放</item>
+        <item>沉浸式</item>
+        <item>加载视图控件</item>
+        <item>CoordinatorLayout</item>
+        <item>右滑动退出</item>
+        <item>开关按键</item>
+        <item>侧滑删除</item>
+    </string-array>
+
 </resources>
