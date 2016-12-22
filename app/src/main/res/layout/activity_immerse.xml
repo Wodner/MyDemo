@@ -4,7 +4,24 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <Button
+        android:id="@+id/btn_color_immerse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_main_theme"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/px_20"
+        android:text="纯颜色沉浸式"/>
 
+    <Button
+        android:id="@+id/btn_bg_immerse"
+        android:layout_below="@id/btn_color_immerse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_main_theme"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/px_20"
+        android:text="背景沉浸式"/>
 
 
 </RelativeLayout>

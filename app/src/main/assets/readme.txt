@@ -1,1 +1,1 @@
-本demo所使用的列表和网格全部基于RecycleView
+本demo所使用的列表和网格除了列表滑动删除item之外全部基于RecycleView\ndemo主题统一在baseactivity中设置

@@ -29,9 +29,6 @@ public class ToggleButtonActivity extends BaseActivity {
 
     @Override
     protected void setUpView() {
-        ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setHomeButtonEnabled(true);
-        mActionBar.setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -48,11 +45,6 @@ public class ToggleButtonActivity extends BaseActivity {
         });
     }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        this.finish();
-        return super.onSupportNavigateUp();
-    }
     /**
      * @param context
      */

@@ -53,6 +53,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void setUpView() {
+        setTitleText("功能页面");
         initRecycleView();
     }
 

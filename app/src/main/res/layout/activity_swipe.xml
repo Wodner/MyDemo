@@ -4,4 +4,11 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/px_36"
+        android:text="往右滑动返回上一个页面"/>
+
 </RelativeLayout>
