@@ -2,8 +2,13 @@ package wu.mydemo.function.immerse;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.View;
 
-import wu.mydemo.BaseActivity;
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import wu.mydemo.R;
 import wu.mydemo.utils.MyStatusBarUtil;
 
@@ -11,23 +16,31 @@ import wu.mydemo.utils.MyStatusBarUtil;
  * 背景沉浸
  * Created by Administrator on 2016/12/22.
  */
-public class BgImmerseActivity extends BaseActivity {
+public class BgImmerseActivity extends AppCompatActivity {
+
+    @Bind(R.id.toolbar)
+    Toolbar toolbar;
 
     @Override
-    protected int setContentViewId() {
-        return 0;
-    }
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_bg_immerse);
+        ButterKnife.bind(this);
+        MyStatusBarUtil.setStatusTransparent(this, false);
 
-    @Override
-    protected void setUpView() {
-        setRootLayoutBackgroundRes(R.mipmap.ic_immerse_bg);
-        setToolbarBackgroundColor(0x00000000);
-        MyStatusBarUtil.setStatusTransparent(mContext,true);
-    }
-
-    @Override
-    protected void init() {
-
+        toolbar.setTitle("背景沉浸");
+        toolbar.setBackgroundColor(0x00000000);
+        if(toolbar!=null){
+            setSupportActionBar(toolbar);
+            //设置toolbar后调用setDisplayHomeAsUpEnabled
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    finish();
+                }
+            });
+        }
     }
 
     /**

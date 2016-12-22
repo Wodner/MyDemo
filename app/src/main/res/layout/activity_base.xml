@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/root_layout">
+    android:layout_height="match_parent">
 
-    <FrameLayout
-        android:id="@+id/fl_base_titleBar"
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/px_96"/>
-    <FrameLayout
-        android:id="@+id/fl_base_content"
-        android:layout_below="@id/fl_base_titleBar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/root_layout"-->
+            <!--android:fitsSystemWindows="true"-->
+            <!--android:clipToPadding="true"-->
+            <!--android:background="@drawable/ic_immerse_bg"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+
+        <FrameLayout
+            android:id="@+id/fl_base_titleBar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/px_96"/>
+        <FrameLayout
+            android:id="@+id/fl_base_content"
+            android:layout_below="@id/fl_base_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!--</RelativeLayout>-->
 
 </RelativeLayout>

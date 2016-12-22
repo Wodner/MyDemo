@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.support.v7.widget.Toolbar;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
 import butterknife.ButterKnife;
@@ -30,7 +31,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     private FrameLayout mTitleBar;//标题栏
     private FrameLayout mContent;//内容栏
     protected ProgressDialog mProgressDialog;
-    private RelativeLayout rootLayout;
+//    private RelativeLayout rootLayout;
     private Toolbar mToolbar;
     /**
      * 设置布局文件
@@ -56,7 +57,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base);
-        rootLayout = (RelativeLayout)findViewById(R.id.root_layout);
+//        rootLayout = (RelativeLayout)findViewById(R.id.root_layout);
         mTitleBar = $(R.id.fl_base_titleBar);
         mContent = $(R.id.fl_base_content);
         mContext = this;
@@ -90,7 +91,6 @@ public abstract class BaseActivity extends AppCompatActivity {
      * 初始化 Toolbar
      */
     private void initToolbar(){
-        setTitleTextColor(0xffffffff);
         setHomeNav(true);
     }
     @Override
@@ -169,20 +169,20 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * 设置最底层的背景图 ， 背景沉浸可以使用
-     * @param idRes
-     */
-    protected void setRootLayoutBackgroundRes(int idRes){
-        rootLayout.setBackgroundResource(idRes);
-    }
-    /**
-     * 设置最底层的背景图 ， 背景沉浸可以使用
-     * @param color
-     */
-    protected void setRootLayoutBackgroundColor(int color){
-        rootLayout.setBackgroundResource(color);
-    }
+//    /**
+//     * 设置最底层的背景图 ， 背景沉浸可以使用
+//     * @param idRes
+//     */
+//    protected void setRootLayoutBackgroundRes(int idRes){
+//        rootLayout.setBackgroundResource(idRes);
+//    }
+//    /**
+//     * 设置最底层的背景图 ， 背景沉浸可以使用
+//     * @param color
+//     */
+//    protected void setRootLayoutBackgroundColor(int color){
+//        rootLayout.setBackgroundResource(color);
+//    }
 
     /**
      * 显示加载框
