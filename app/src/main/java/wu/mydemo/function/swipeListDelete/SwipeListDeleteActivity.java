@@ -37,9 +37,6 @@ public class SwipeListDeleteActivity extends BaseActivity {
 
     @Override
     protected void setUpView() {
-        ActionBar mActionBar = getSupportActionBar();
-        mActionBar.setHomeButtonEnabled(true);
-        mActionBar.setDisplayHomeAsUpEnabled(true);
 
     }
 
@@ -70,12 +67,6 @@ public class SwipeListDeleteActivity extends BaseActivity {
             public void onScroll(AbsListView absListView, int i, int i1, int i2) {
             }
         });
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        this.finish();
-        return super.onSupportNavigateUp();
     }
 
     /**

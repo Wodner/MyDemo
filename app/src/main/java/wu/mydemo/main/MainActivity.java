@@ -22,6 +22,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import wu.mydemo.BaseActivity;
 import wu.mydemo.R;
+import wu.mydemo.function.coordinatorLayout.CoordinatorLayoutActivity;
 import wu.mydemo.function.immerse.ImmerseActivity;
 import wu.mydemo.function.readme.ReadMeActivity;
 import wu.mydemo.function.swipeBack.MySwipeBackActivity;
@@ -53,6 +54,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void setUpView() {
+        setTitleText("功能页面");
         initRecycleView();
     }
 
@@ -114,6 +116,7 @@ public class MainActivity extends BaseActivity {
                 case 14:
                     break;
                 case 15:
+                    CoordinatorLayoutActivity.startAction(mContext);
                     break;
                 case 16:
                     MySwipeBackActivity.startAction(mContext);

@@ -7,7 +7,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/NoActionBarTheme">
         <!--登录页面-->
         <activity android:name=".function.login.LoginActivity"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
@@ -28,6 +28,13 @@
         <activity android:name=".function.immerse.ImmerseActivity"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
             android:label="沉浸式" />
+
+        <activity android:name=".function.immerse.ColorImmerseActivity"
+            android:label="纯色着色沉浸"/>
+
+        <activity android:name=".function.immerse.BgImmerseActivity"
+            android:label="背景沉浸"/>
+
         <!--说明页面-->
         <activity android:name=".function.readme.ReadMeActivity"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
@@ -48,6 +55,10 @@
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
             android:label="滑动删除"
             />
+
+        <activity android:name=".function.coordinatorLayout.CoordinatorLayoutActivity"/>
+        <activity android:name=".function.coordinatorLayout.WithAppbarActivity"/>
+        <activity android:name=".function.coordinatorLayout.WithCollapsingActivity"/>
 
 
     </application>
