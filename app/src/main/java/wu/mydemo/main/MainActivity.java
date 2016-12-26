@@ -1,7 +1,9 @@
 package wu.mydemo.main;
 
 import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
@@ -23,8 +25,11 @@ import butterknife.ButterKnife;
 import wu.mydemo.BaseActivity;
 import wu.mydemo.R;
 import wu.mydemo.function.coordinatorLayout.CoordinatorLayoutActivity;
+import wu.mydemo.function.coordinatorLayout.WithCollapsingActivity;
 import wu.mydemo.function.immerse.ImmerseActivity;
+import wu.mydemo.function.pushRefresh.PushRefreshActivity;
 import wu.mydemo.function.readme.ReadMeActivity;
+import wu.mydemo.function.shareView.ShareViewActivity;
 import wu.mydemo.function.swipeBack.MySwipeBackActivity;
 import wu.mydemo.function.swipeListDelete.SwipeListDeleteActivity;
 import wu.mydemo.function.toggleButton.ToggleButtonActivity;
@@ -93,6 +98,7 @@ public class MainActivity extends BaseActivity {
                 case 3:
                     break;
                 case 4:
+                    PushRefreshActivity.startAction(mContext);
                     break;
                 case 5:
                     break;
@@ -103,6 +109,8 @@ public class MainActivity extends BaseActivity {
                 case 8:
                     break;
                 case 9:
+                    ShareViewActivity.startAction(mContext);
+
                     break;
                 case 10:
                     break;

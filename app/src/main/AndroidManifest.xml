@@ -56,9 +56,14 @@
             android:label="滑动删除"
             />
 
+        <activity android:name=".function.shareView.ShareViewActivity"/>
+
         <activity android:name=".function.coordinatorLayout.CoordinatorLayoutActivity"/>
         <activity android:name=".function.coordinatorLayout.WithAppbarActivity"/>
         <activity android:name=".function.coordinatorLayout.WithCollapsingActivity"/>
+
+
+        <activity android:name=".function.pushRefresh.PushRefreshActivity"/>
 
 
     </application>
