@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_marginTop="@dimen/px_1"
+    android:layout_marginLeft="@dimen/px_4"
+    android:layout_marginRight="@dimen/px_4"
+    app:cardCornerRadius="@dimen/px_2"
+    android:elevation="@dimen/px_10" >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/px_12"
+            android:layout_marginBottom="@dimen/px_12"
+            android:layout_marginLeft="@dimen/px_34"
+            android:layout_marginRight="@dimen/px_34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_song_name"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/px_30"
+                android:singleLine="true"
+                android:elevation="@dimen/px_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="@dimen/px_18"
+                android:id="@+id/tv_song_auther"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

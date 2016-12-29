@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="wu.mydemo">
 
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -55,6 +58,8 @@
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
             android:label="滑动删除"
             />
+        <!--音乐播放-->
+        <activity android:name=".function.music.MusicActivity"></activity>
 
         <activity android:name=".function.coordinatorLayout.CoordinatorLayoutActivity"/>
         <activity android:name=".function.coordinatorLayout.WithAppbarActivity"/>
