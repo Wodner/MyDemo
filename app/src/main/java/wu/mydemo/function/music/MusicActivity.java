@@ -1,6 +1,8 @@
 package wu.mydemo.function.music;
 
 import android.Manifest;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
@@ -26,10 +28,10 @@ import wu.mydemo.function.music.model.Audio;
 import wu.mydemo.function.music.utils.MediaUtils;
 
 /**
+ * 音乐播放
  * Created by Administrator on 2016/12/21.
  */
 public class MusicActivity extends BaseActivity implements EasyPermissions.PermissionCallbacks,SongsAdapter.OnRecyclerViewItemClickListener{
-
 
     @Bind(R.id.recycle_song)
     RecyclerView recycleSong;
@@ -39,6 +41,15 @@ public class MusicActivity extends BaseActivity implements EasyPermissions.Permi
     private static final int RC_READ_EXTERNAL_STORAGE = 123;
     private List<Audio> audioList = new ArrayList<>();
     private SongsAdapter songsAdapter;
+
+
+    /**
+     * @param context
+     */
+    public static void startAction(Activity context) {
+        Intent intent = new Intent(context, MusicActivity.class);
+        context.startActivity(intent);
+    }
 
     @Override
     protected int setContentViewId() {

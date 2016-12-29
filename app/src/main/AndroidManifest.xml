@@ -3,9 +3,10 @@
     package="wu.mydemo">
 
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
+        android:name=".app.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -39,7 +40,7 @@
             android:label="背景沉浸"/>
 
         <!--说明页面-->
-        <activity android:name=".function.readme.ReadMeActivity"
+        <activity android:name=".function.ReadMe.ReadMeActivity"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
             android:label="说明" />
 
@@ -61,10 +62,16 @@
         <!--音乐播放-->
         <activity android:name=".function.music.MusicActivity"></activity>
 
+        <activity android:name=".function.shareView.ShareViewActivity"/>
+
         <activity android:name=".function.coordinatorLayout.CoordinatorLayoutActivity"/>
         <activity android:name=".function.coordinatorLayout.WithAppbarActivity"/>
         <activity android:name=".function.coordinatorLayout.WithCollapsingActivity"/>
 
+
+        <activity android:name=".function.pushRefresh.PushRefreshActivity"/>
+
+        <service android:name=".function.music.service.MusicService"/>
 
     </application>
 
