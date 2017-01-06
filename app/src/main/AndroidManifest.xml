@@ -4,6 +4,11 @@
 
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".app.MyApplication"
@@ -51,24 +56,24 @@
         <!--滑动返回页面-->
         <activity android:name=".function.swipeBack.MySwipeBackActivity"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
-            android:label="滑动返回"
-            />
+            android:label="滑动返回" />
 
         <!--滑动删除页面-->
         <activity android:name=".function.swipeListDelete.SwipeListDeleteActivity"
             android:windowSoftInputMode="stateHidden|stateAlwaysHidden"
-            android:label="滑动删除"
-            />
+            android:label="滑动删除" />
         <!--音乐播放-->
-        <activity android:name=".function.music.MusicActivity"></activity>
+        <activity android:name=".function.music.MusicActivity"
+            android:label="音乐播放"/>
+        <!--图片选择-->
+        <activity android:name=".function.pictureSelect.PictureSelector"
+            android:label="图片选择"/>
 
         <activity android:name=".function.shareView.ShareViewActivity"/>
         <activity android:name=".function.slidingMenu.SlidingMenuActivity"/>
-
         <activity android:name=".function.coordinatorLayout.CoordinatorLayoutActivity"/>
         <activity android:name=".function.coordinatorLayout.WithAppbarActivity"/>
         <activity android:name=".function.coordinatorLayout.WithCollapsingActivity"/>
-
         <activity android:name=".function.pushRefresh.PushRefreshActivity"/>
         <service android:name=".function.music.service.MusicService"/>
 

@@ -18,6 +18,7 @@ import wu.mydemo.R;
 import wu.mydemo.function.coordinatorLayout.CoordinatorLayoutActivity;
 import wu.mydemo.function.immerse.ImmerseActivity;
 import wu.mydemo.function.music.MusicActivity;
+import wu.mydemo.function.pictureSelect.PictureSelector;
 import wu.mydemo.function.pushRefresh.PushRefreshActivity;
 import wu.mydemo.function.readme.ReadMeActivity;
 import wu.mydemo.function.shareView.ShareViewActivity;
@@ -83,6 +84,7 @@ public class MainActivity extends BaseActivity {
                     ReadMeActivity.startAction(mContext);
                     break;
                 case 1:
+                    PictureSelector.startAction(mContext);
                     break;
                 case 2:
                     break;
