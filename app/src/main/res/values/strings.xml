@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">MyDemo</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string-array name="itme_function">
         <item>说明</item>
@@ -25,6 +27,19 @@
 
     </string-array>
 
+    <string name="rationale_read_storage">This app needs access to your storage to read your song.</string>
+    <string name="rationale_camera">This app needs access to your camera so you can take pictures.</string>
+
+    <string name="rationale_location_contacts">This app needs access to your location and contacts to know where and who you are.</string>
+    <string name="rationale_sms">This app needs access to your sms to read all your great messages.</string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="setting">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings_dialog_canceled">Settings dialog canceled</string>
+    <string name="returned_from_app_settings_to_activity">Returned from app settings to MainActivity</string>
+    <string name="has_read_sms_permission">Has read sms permission: %b</string>
+
     <!--上下拉刷新-->
     <string name="pull_refresh_text">下拉刷新</string>
     <string name="release_refresh_text">释放更新</string>
@@ -35,4 +50,5 @@
     <string name="preview">预览</string>
     <string name="msg_no_camera">没有系统相机</string>
     <string name="msg_amount_limit">已经达到最高选择数量</string>
+
 </resources>

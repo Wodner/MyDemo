@@ -1,18 +1,13 @@
 package wu.mydemo.function.readme;
 
+
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.widget.TextView;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import wu.mydemo.BaseActivity;
 import wu.mydemo.R;
-import wu.mydemo.utils.MyStatusBarUtil;
 import wu.mydemo.utils.SystemTool;
 
 /**

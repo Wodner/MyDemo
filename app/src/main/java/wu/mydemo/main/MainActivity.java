@@ -1,40 +1,31 @@
 package wu.mydemo.main;
 
 import android.app.Activity;
-import android.app.ActivityOptions;
 import android.content.Intent;
-import android.os.Build;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.KeyEvent;
 import android.view.View;
-import android.widget.BaseAdapter;
 import android.widget.RelativeLayout;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 import butterknife.Bind;
-import butterknife.ButterKnife;
 import wu.mydemo.BaseActivity;
 import wu.mydemo.R;
 import wu.mydemo.function.coordinatorLayout.CoordinatorLayoutActivity;
-import wu.mydemo.function.coordinatorLayout.WithCollapsingActivity;
 import wu.mydemo.function.immerse.ImmerseActivity;
+import wu.mydemo.function.music.MusicActivity;
 import wu.mydemo.function.pushRefresh.PushRefreshActivity;
 import wu.mydemo.function.readme.ReadMeActivity;
 import wu.mydemo.function.shareView.ShareViewActivity;
+import wu.mydemo.function.slidingMenu.SlidingMenuActivity;
 import wu.mydemo.function.swipeBack.MySwipeBackActivity;
 import wu.mydemo.function.swipeListDelete.SwipeListDeleteActivity;
 import wu.mydemo.function.toggleButton.ToggleButtonActivity;
 import wu.mydemo.main.adapter.MainRecycleAdapter;
-import wu.mydemo.utils.MyStatusBarUtil;
 import wu.mydemo.utils.SystemTool;
 
 /**
@@ -110,13 +101,14 @@ public class MainActivity extends BaseActivity {
                     break;
                 case 9:
                     ShareViewActivity.startAction(mContext);
-
                     break;
                 case 10:
+                    SlidingMenuActivity.startAction(mContext);
                     break;
                 case 11:
                     break;
                 case 12:
+                    MusicActivity.startAction(mContext);
                     break;
                 case 13:
                     ImmerseActivity.startAction(mContext);
