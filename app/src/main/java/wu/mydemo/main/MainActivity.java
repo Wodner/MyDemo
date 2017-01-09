@@ -15,6 +15,7 @@ import java.util.List;
 import butterknife.Bind;
 import wu.mydemo.BaseActivity;
 import wu.mydemo.R;
+import wu.mydemo.function.bottomNavBar.BottomNavBarActivity;
 import wu.mydemo.function.coordinatorLayout.CoordinatorLayoutActivity;
 import wu.mydemo.function.immerse.ImmerseActivity;
 import wu.mydemo.function.music.MusicActivity;
@@ -108,6 +109,7 @@ public class MainActivity extends BaseActivity {
                     SlidingMenuActivity.startAction(mContext);
                     break;
                 case 11:
+                    BottomNavBarActivity.startAction(mContext);
                     break;
                 case 12:
                     MusicActivity.startAction(mContext);

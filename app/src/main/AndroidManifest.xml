@@ -69,6 +69,9 @@
         <activity android:name=".function.pictureSelect.PictureSelector"
             android:label="图片选择"/>
 
+        <activity android:name=".function.bottomNavBar.BottomNavBarActivity"
+            android:label="底部导航栏"/>
+
         <activity android:name=".function.shareView.ShareViewActivity"/>
         <activity android:name=".function.slidingMenu.SlidingMenuActivity"/>
         <activity android:name=".function.coordinatorLayout.CoordinatorLayoutActivity"/>
