@@ -18,7 +18,9 @@ import wu.mydemo.R;
 import wu.mydemo.function.bottomNavBar.BottomNavBarActivity;
 import wu.mydemo.function.coordinatorLayout.CoordinatorLayoutActivity;
 import wu.mydemo.function.immerse.ImmerseActivity;
+import wu.mydemo.function.lunbo.ImagePagerActivity;
 import wu.mydemo.function.music.MusicActivity;
+import wu.mydemo.function.okhttp3.OkhttpActivity;
 import wu.mydemo.function.pictureSelect.PictureSelector;
 import wu.mydemo.function.pushRefresh.PushRefreshActivity;
 import wu.mydemo.function.readme.ReadMeActivity;
@@ -90,6 +92,7 @@ public class MainActivity extends BaseActivity {
                 case 2:
                     break;
                 case 3:
+                    ImagePagerActivity.startAction(mContext);
                     break;
                 case 4:
                     PushRefreshActivity.startAction(mContext);
@@ -101,6 +104,7 @@ public class MainActivity extends BaseActivity {
                 case 7:
                     break;
                 case 8:
+                    OkhttpActivity.startAction(mContext);
                     break;
                 case 9:
                     ShareViewActivity.startAction(mContext);

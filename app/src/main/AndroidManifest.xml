@@ -72,6 +72,12 @@
         <activity android:name=".function.bottomNavBar.BottomNavBarActivity"
             android:label="底部导航栏"/>
 
+        <activity android:name=".function.okhttp3.OkhttpActivity"
+            android:label="网络请求"/>
+
+        <activity android:name=".function.lunbo.ImagePagerActivity"
+            android:label="轮播图"/>
+
         <activity android:name=".function.shareView.ShareViewActivity"/>
         <activity android:name=".function.slidingMenu.SlidingMenuActivity"/>
         <activity android:name=".function.coordinatorLayout.CoordinatorLayoutActivity"/>

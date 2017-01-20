@@ -1,6 +1,7 @@
 package wu.mydemo.utils;
 
 import android.content.Context;
+import android.os.Environment;
 import android.support.design.widget.Snackbar;
 import android.view.View;
 
@@ -54,5 +55,13 @@ public class SystemTool {
             e.printStackTrace();
             return "";
         }
+    }
+
+    /**
+     * 获取内置SD卡路径
+     * @return
+     */
+    public static String getInnerSDCardPath() {
+        return Environment.getExternalStorageDirectory().getPath();
     }
 }

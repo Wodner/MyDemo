@@ -51,7 +51,7 @@ public class WithCollapsingActivity extends BaseActivity {
     @Override
     protected void setUpView() {
         hideTitleBar();
-        MyStatusBarUtil.setStatusTransparent(mContext,false);
+//        MyStatusBarUtil.setStatusTransparent(mContext,false);
         toolbar.setTitle("Go Spurs Go");
         setSupportActionBar(toolbar);
         //设置toolbar后调用setDisplayHomeAsUpEnabled
