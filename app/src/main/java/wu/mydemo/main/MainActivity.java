@@ -21,6 +21,8 @@ import wu.mydemo.function.immerse.ImmerseActivity;
 import wu.mydemo.function.lunbo.ImagePagerActivity;
 import wu.mydemo.function.music.MusicActivity;
 import wu.mydemo.function.okhttp3.OkhttpActivity;
+import wu.mydemo.function.photoview.PhotoViewActivity;
+import wu.mydemo.function.photoview.ViewPagerActivity;
 import wu.mydemo.function.pictureSelect.PictureSelector;
 import wu.mydemo.function.pushRefresh.PushRefreshActivity;
 import wu.mydemo.function.readme.ReadMeActivity;
@@ -90,6 +92,7 @@ public class MainActivity extends BaseActivity {
                     PictureSelector.startAction(mContext);
                     break;
                 case 2:
+                    PhotoViewActivity.startAction(mContext);
                     break;
                 case 3:
                     ImagePagerActivity.startAction(mContext);

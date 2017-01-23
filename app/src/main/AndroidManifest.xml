@@ -78,6 +78,11 @@
         <activity android:name=".function.lunbo.ImagePagerActivity"
             android:label="轮播图"/>
 
+        <activity android:name=".function.photoview.ViewPagerActivity"></activity>
+        <activity android:name=".function.photoview.PhotoViewActivity"></activity>
+        <activity android:name=".function.photoview.PhotoViewDetailActivity"
+            android:theme="@style/FullScreenTheme"/>
+
         <activity android:name=".function.shareView.ShareViewActivity"/>
         <activity android:name=".function.slidingMenu.SlidingMenuActivity"/>
         <activity android:name=".function.coordinatorLayout.CoordinatorLayoutActivity"/>
